@@ -4,7 +4,7 @@ import {navigate} from 'hookrouter';
 import Cookies from 'js-cookie';
 
 export default function Login () {
-  const [active, setActive] = useAppContext ();
+  const {active, setActive} = useAppContext ();
   const [username, setUsername] = useState ('');
   const [password, setPassword] = useState ('');
   const [error, setError] = useState (false);
