@@ -14,6 +14,10 @@ export default function NavBar () {
   } = useAppContext ();
 
   function handleActive (link) {
+    if (link) {
+      buttonType ();
+    }
+
     setActive (link);
   }
 
