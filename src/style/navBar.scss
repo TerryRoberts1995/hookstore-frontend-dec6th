@@ -22,10 +22,10 @@
          &:hover {
             color: #54079D;
          }
-
-         &:focus {
-            color: #54079D;
-         }
       }
+      
+      .active{
+         color: #54079D !important;
+      }   
    }
 }

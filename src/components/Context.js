@@ -4,6 +4,7 @@ const AppContext = createContext ();
 
 export default function AppWrapper({children}) {
   const [loggedIn, setLoggedIn] = useState (false);
+  const [active, setActive] = useState ('');
 
   const logout = () => {
     if (Cookies.get ('username')) {
@@ -23,6 +24,8 @@ export default function AppWrapper({children}) {
     setLoggedIn: value => setLoggedIn (value),
     login: () => login (),
     logout: () => logout (),
+    active: active,
+    setActive: value => setActive (value),
   };
 
   return (
